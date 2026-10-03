@@ -1,0 +1,41 @@
+Employee_ID,Employee_Name,Department,Position,Monthly_Salary,Years_Service,Training_Courses
+E001,Thandi Moyo,Secretarial,Receptionist,18000,5,0
+E002,Brian Ndlovu,Secretarial,Secretary,19500,6,1
+E003,Ruth Dube,Secretarial,Senior Secretary,24000,9,2
+E004,Mavis Sibanda,Secretarial,Secretary,20500,7,1
+E005,Linda Khumalo,Secretarial,Secretary,21000,8,1
+E006,Peter Maseko,Secretarial,Office Administrator,25500,10,2
+E007,Grace Ncube,Secretarial,Secretary,20000,6,0
+E008,Nomsa Dlamini,Secretarial,Receptionist,17500,4,0
+E009,Faith Makoni,Secretarial,Senior Administrator,27000,11,2
+E010,John Mhlanga,Secretarial,Secretary,21500,7,1
+E011,Mary Sibeko,Accounting,Junior Accountant,28000,3,1
+E012,Daniel Moyo,Accounting,Accountant,36000,8,2
+E013,Patience Ncube,Accounting,Senior Accountant,45500,12,3
+E014,Trevor Dube,Accounting,Accountant,37500,9,2
+E015,Angela Maseko,Accounting,Bookkeeper,30000,6,1
+E016,Samuel Ndlovu,Accounting,Accountant,39000,10,2
+E017,Rudo Sibanda,Accounting,Junior Accountant,29000,4,1
+E018,Michael Khumalo,Accounting,Senior Accountant,47000,13,3
+E019,Sarah Dlamini,Accounting,Bookkeeper,31500,7,1
+E020,Kelvin Moyo,Accounting,Accountant,38500,9,2
+E021,Alice Ncube,Trusts & Estates,Trust Administrator,32000,5,1
+E022,Robert Dube,Trusts & Estates,Trust Accountant,41000,9,2
+E023,Chipo Moyo,Trusts & Estates,Estate Administrator,35000,7,1
+E024,George Ndlovu,Trusts & Estates,Senior Trust Officer,49500,14,3
+E025,Melissa Sibanda,Trusts & Estates,Trust Administrator,33500,6,1
+E026,Tinashe Khumalo,Trusts & Estates,Estate Officer,38000,8,2
+E027,Janet Maseko,Trusts & Estates,Trust Accountant,42500,10,2
+E028,Edward Dlamini,Trusts & Estates,Senior Estate Officer,46000,12,3
+E029,Rose Ncube,Trusts & Estates,Trust Administrator,34000,5,1
+E030,Victor Moyo,Trusts & Estates,Estate Administrator,36500,7,1
+E031,Carol Dube,Audit & Clerks,Audit Clerk,26000,3,1
+E032,Andrew Ndlovu,Audit & Clerks,Audit Clerk,27500,4,1
+E033,Susan Moyo,Audit & Clerks,Senior Audit Clerk,35500,8,2
+E034,William Sibanda,Audit & Clerks,Audit Clerk,28500,5,1
+E035,Beatrice Ncube,Audit & Clerks,Audit Clerk,29500,6,1
+E036,Isaac Dube,Audit & Clerks,Senior Audit Clerk,37000,9,2
+E037,Cynthia Maseko,Audit & Clerks,Audit Clerk,30000,6,1
+E038,Mandla Khumalo,Audit & Clerks,Audit Clerk,31000,7,1
+E039,Helen Ndlovu,Audit & Clerks,Senior Audit Clerk,38000,10,2
+E040,Oscar Moyo,Audit & Clerks,Audit Supervisor,45000,12,3
