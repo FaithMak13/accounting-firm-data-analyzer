@@ -6,8 +6,14 @@ This program analyzes employee information for a fictional accounting firm.
 It demonstrates Python data handling, calculations, functions, and visualizations.
 """
 
-import pandas as pd
-import matplotlib.pyplot as plt
+try:
+    import pandas as pd  # type: ignore
+    import matplotlib.pyplot as plt  # type: ignore
+except ModuleNotFoundError as exc:
+    raise SystemExit(
+        "Missing required dependencies. Install them with: "
+        "python -m pip install pandas matplotlib"
+    ) from exc
 
 DATA_FILE = "employees.csv"
 
