@@ -15,7 +15,7 @@ except ModuleNotFoundError as exc:
         "python -m pip install pandas matplotlib"
     ) from exc
 
-DATA_FILE = "employees.csv"
+DATA_FILE = "Data analysis/employees.csv"
 
 
 def load_data(filename):
@@ -39,6 +39,7 @@ def analyze_data(df):
             Average_Service=("Years_Service", "mean"),
         )
         .sort_values("Average_Salary", ascending=False)
+        .reset_index()
     )
 
     return total_payroll, average_salary, highest_salary, lowest_salary, department_summary
@@ -46,19 +47,31 @@ def analyze_data(df):
 
 def show_department_chart(summary):
     """Display average salary by department."""
-    summary["Average_Salary"].plot(kind="bar", title="Average Monthly Salary by Department")
+    # Ensure data is clean before plotting
+    plt.figure(figsize=(8, 5))
+
+    # Extract data directly to lists to avoid pandas internal looping bugs
+    departments = summary["Department"].tolist()
+    salaries = summary["Average_Salary"].tolist()
+    
+    plt.bar(departments, salaries, color="skyblue")
+    plt.title("Average Monthly Salary by Department")
     plt.ylabel("Salary (R)")
     plt.xlabel("Department")
     plt.xticks(rotation=25, ha="right")
     plt.tight_layout()
     plt.show()
 
-
 def show_employee_distribution(df):
     """Display the number of employees in each department."""
-    df["Department"].value_counts().plot(
-        kind="bar", title="Employees by Department"
-    )
+    plt.figure(figsize=(8, 5))
+    
+    counts = df["Department"].value_counts()
+    departments = counts.index.tolist()
+    employee_counts = counts.values.tolist()
+    
+    plt.bar(departments, employee_counts, color="salmon")
+    plt.title("Employees by Department")
     plt.ylabel("Number of Employees")
     plt.xlabel("Department")
     plt.xticks(rotation=25, ha="right")
@@ -70,7 +83,7 @@ def main():
     """Run the complete analysis."""
     df = load_data(DATA_FILE)
 
-    total, average, highest, lowest, summary = analyze_data(df)
+    total, average, highest, lowest, summary = analyze_data(df) # <-- Add summary here!
 
     print("\nACCOUNTING FIRM DATA ANALYZER")
     print("=" * 40)
@@ -79,7 +92,6 @@ def main():
     print(f"Average monthly salary: R{average:,.2f}")
     print(f"Highest monthly salary: R{highest:,.2f}")
     print(f"Lowest monthly salary: R{lowest:,.2f}")
-
     print("\nDEPARTMENT SUMMARY")
     print("=" * 40)
     print(summary.round(2).to_string())
