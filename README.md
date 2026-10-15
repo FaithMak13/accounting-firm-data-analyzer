@@ -2,7 +2,7 @@
 
 Accounting Firm Data Analyzer is a Python program used for analysis of information about employees at a fictional accounting firm which has 40 employees in four departments: Secretarial, Accounting, Trusts & Estates, and Audit & Clerks.
 
-Data is kept in CSV format in employees.csv file. It has fictional information about employees with regard to the department where they work, monthly salary, time spent working in the company and number of training courses which have been completed. Dataset was developed for the purposes of the project and does not contain any real information about the employees. There is no dataset URL available.
+Data is kept in CSV format in the employees.csv file. It has fictional information about employees with regard to the department where they work, monthly salary, time spent working in the company, and the number of training courses which have been completed. Dataset was developed for the purposes of the project and does not contain any real information about the employees. There is no dataset URL available.
 
 As a developing software engineer, I wish to develop my skills in Python programming, data analysis, problem solving, and visualization of data. I am interested in learning how to turn raw data into useful information that could be used for making business decisions, especially those concerning accounting and human resources.
 
@@ -64,7 +64,7 @@ Data visualization package: matplotlib.
 
 File format: CSV (Comma-Separated Values).
 
-Version control: Git and GitHub (if used).
+Version control: Git and GitHub.
 
 Python programming language is used to write the source code and implement the analysis as functions. The pandas package reads the CSV file, builds a DataFrame with employee data, groups the data by departments and performs calculations. Matplotlib package is used to build charts and visualize the results.
 
